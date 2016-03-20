@@ -1,0 +1,64 @@
+@import url("reset.css");
+@keyframes drive {
+  from {
+    left: 0; }
+  to {
+    left: 100%; } }
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.outbox {
+  min-width: 100%;
+  min-height: 100%; }
+
+#head {
+  background: linear-gradient(#87cefa, #F5D45B); }
+  #head .bridge {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 30%;
+    border: 1px dotted black;
+    overflow: hidden; }
+    #head .bridge .deck {
+      width: 100%;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      border: 1px solid black; }
+    #head .bridge .car {
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      top: 8px;
+      border: 1px solid black;
+      border-radius: 20px;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-timing-function: linear; }
+    #head .bridge .pier {
+      width: 30px;
+      height: 70px;
+      position: relative;
+      bottom: 0;
+      display: inline-block;
+      margin-top: 30px;
+      margin-left: 70px;
+      border: 1px solid black;
+      background: url(http://www.aholgate.com/girderpics/thorntonpier1.gif) no-repeat;
+      background-size: auto 100%; }
+
+#faq {
+  background: linear-gradient(#F5D45B, #FF794B); }
+
+#sponsors {
+  background: linear-gradient(#FF794B, #1654FE); }
+
+#team {
+  background: linear-gradient(#1654FE, black); }
+
+/*# sourceMappingURL=style.css.map */
