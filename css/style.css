@@ -9,14 +9,14 @@
 
 html, body {
   width: 100%;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
 
 body {
-  font-size: "brandon-grotesque", sans-serif; }
+  font-size: "brandon-grotesque", sans-serif;
+  overflow-x: hidden; }
 
 .outbox {
-  width: 100%;
+  max-width: 100%;
   min-height: 100%; }
 
 #head {
@@ -32,21 +32,21 @@ body {
       height: 50px;
       position: absolute;
       top: 0;
-      background-image: url("../images/road3.svg");
+      background-image: url("../images/road4.svg");
       background-repeat: repeat-x; }
     #head .bridge .piers {
       width: 100%;
       height: 130px;
       overflow: hidden; }
       #head .bridge .piers .pier {
-        width: 50px;
+        width: 60px;
         height: 80px;
         position: relative;
         bottom: 0;
         display: inline-block;
         margin-top: 50px;
         margin-left: 50px;
-        background-image: url("../images/pier2.svg");
+        background-image: url("../images/pier4.svg");
         background-size: auto 100%; }
     #head .bridge .car {
       width: 70px;
@@ -61,7 +61,7 @@ body {
       z-index: 2;
       background-repeat: no-repeat; }
       #head .bridge .car.reverse {
-        top: -8px;
+        top: -5px;
         animation-direction: reverse;
         z-index: 1;
         transform: scaleX(-1);
