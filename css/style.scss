@@ -5,6 +5,13 @@
     to {left: 105%;}
 }
 
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -36,14 +43,13 @@ body {
       position: absolute;
       top: 0;
       background-image: url("../images/road6.svg");
-      background-repeat: repeat-x;
       background-size: auto 100%, 100% 100%;
       background-position: bottom;
       background-color: #e67e22;
     }
     .piers {
       width: 100%;
-      height: 100px;
+      height: 40%;
 
       position: absolute;
       top: 25%;
@@ -56,16 +62,22 @@ body {
     }
     .car {
       width: 8%;
-      height: 13%;
+      height: 11%;
       position: absolute;
       top: 9%;
       left: -20%;
+
       animation-name: drive;
       animation-duration: 15s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       z-index: 2;
       background-repeat: no-repeat;
+      @media (max-width: 600px) {
+        width: 15%;
+        height: 10%;
+        animation-duration: 6s;
+      }
       &.reverse {
         top: -2%;
         animation-direction: reverse;
