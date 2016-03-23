@@ -7,7 +7,7 @@
 	.st1{fill:#F7BE38;stroke:#010101;stroke-miterlimit:10;}
 	.st2{fill:#D2D7D4;}
 </style>
-<rect class="st0" width="1239.3" height="60"/>
+<rect class="st0" width="2478.6" height="60"/>
 <rect x="48.6" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="8.1" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="131.2" y="20.2" class="st1" width="25.9" height="5.2"/>
@@ -40,9 +40,8 @@
 <rect x="1082.1" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="1205.3" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="1164.7" y="20.2" class="st1" width="25.9" height="5.2"/>
-<rect y="52.7" class="st2" width="1239.3" height="7.3"/>
-<rect class="st2" width="1239.3" height="3.9"/>
-<rect x="1239.3" y="0" class="st0" width="1239.3" height="60"/>
+<rect y="52.7" class="st2" width="2478.6" height="7.3"/>
+<rect class="st2" width="2478.6" height="3.9"/>
 <rect x="1287.9" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="1247.4" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="1370.5" y="20.2" class="st1" width="25.9" height="5.2"/>
@@ -75,6 +74,4 @@
 <rect x="2321.4" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="2444.5" y="20.2" class="st1" width="25.9" height="5.2"/>
 <rect x="2404" y="20.2" class="st1" width="25.9" height="5.2"/>
-<rect x="1239.3" y="52.7" class="st2" width="1239.3" height="7.3"/>
-<rect x="1239.3" y="0" class="st2" width="1239.3" height="3.9"/>
 </svg>
