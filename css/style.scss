@@ -14,7 +14,7 @@ html, body {
   height: 100%;
 }
 body {
-  font-size: "brandon-grotesque", sans-serif;
+  //font-size: "brandon-grotesque", sans-serif;
 }
 
 .outbox {
@@ -24,7 +24,7 @@ body {
 }
 
 #head {
-  background: #e67e22;
+  background: #ff7242;
   .bridge {
     width: 100%;
     height: 30%;
@@ -42,7 +42,7 @@ body {
       background-repeat: repeat-x;
       background-size: auto 90%;
       background-position: bottom;
-      background-color: #e67e22;
+      background-color: #ff7242;
       overflow: hidden;
       .car {
         position: absolute;
@@ -100,10 +100,20 @@ body {
     }
   }
   .intro {
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    font-size: 8vw;
+    font-size: 8em;
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    @media (max-width: 800px) {
+      font-size: 5em;
+    }
+    .subtitle {
+      font-size: .3em;
+    }
   }
 }
 
