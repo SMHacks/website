@@ -30,41 +30,36 @@ body {
     position: absolute;
     bottom: 0px;
     background-color: #4183D7;
-    overflow-x: hidden;
-    overflow-y: visible;
     .deck {
       width: 100%;
-      height: 60px;
+      height: 25%;
       position: absolute;
       top: 0;
-      background-image: url("../images/road4.svg");
+      background-image: url("../images/road6.svg");
       background-repeat: repeat-x;
-      background-size: auto 50px;
+      background-size: auto 100%, 100% 100%;
       background-position: bottom;
       background-color: #e67e22;
     }
     .piers {
       width: 100%;
-      height: 135px;
-      overflow: hidden;
-      .pier {
-        width: 60px;
-        height: 80px;
-        position: relative;
-        bottom: 0;
-        display: inline-block;
-        margin-top: 60px;
-        margin-left: 50px;
-        background-image: url("../images/pier4.svg");
-        background-size: auto 100%;
-      }
+      height: 100px;
+
+      position: absolute;
+      top: 25%;
+
+      background-image: url("../images/pier6.svg");
+      background-repeat: repeat-x;
+      background-size: auto 100%;
+      background-position: bottom;
+      background-color: #4183D7;
     }
     .car {
-      width: 70px;
-      height: 25px;
+      width: 8%;
+      height: 13%;
       position: absolute;
-      top: 20px;
-      left: -80px;
+      top: 9%;
+      left: -20%;
       animation-name: drive;
       animation-duration: 15s;
       animation-timing-function: linear;
@@ -72,7 +67,7 @@ body {
       z-index: 2;
       background-repeat: no-repeat;
       &.reverse {
-        top: 3px;
+        top: -2%;
         animation-direction: reverse;
         z-index: 1;
         transform: scaleX(-1);
