@@ -14,13 +14,18 @@ html, body {
   height: 100%;
 }
 body {
-  //font-size: "brandon-grotesque", sans-serif;
+  font-family: sans-serif;
 }
 
 .outbox {
   max-width: 100%;
   min-height: 100%;
   //border: 1px solid black;
+  .title {
+    font-size: 4em;
+    text-align:center;
+    margin-bottom: 20px;
+  }
 }
 
 #head {
@@ -54,6 +59,9 @@ body {
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         z-index: 2;
+        @media (max-width: 800px) {
+          animation-duration: 7s;
+        }
         &.reverse {
           top: 0px;
           animation-direction: reverse;
@@ -120,10 +128,61 @@ body {
 #faq {
   background-color: #4183D7;
   //background: linear-gradient(#e67e22,#e74c3c);
+  background-image: url(../images/hill.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  .inbox {
+    margin: 0 auto;
+    width: 60%;
+    height: 500px;
+    border-radius: 10px;
+    @media (max-width: 1100px) {
+      width: 80%;
+    }
+    @media (max-width: 800px) {
+      width: 90%;
+    }
+    .tabs {
+      height: 40px;
+      display: flex;
+      width: 100%;
+      .tab {
+        flex: 25%;
+        border: 1px solid black;
+        border-right: 0px solid black;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        cursor:pointer;
+        &:last-of-type {
+          border-right: 1px solid black;
+        }
+      }
+    }
+    .cards {
+      flex-flow: row wrap;
+      display: none;
+      &.active {
+        display:flex;
+      }
+      .card {
+        flex-basis: 50%;
+        padding: 10px;
+        padding-top: 10px;
+        .q {
+          color: gold;
+        }
+        .a {
+          padding-top: 5px;
+        }
+      }
+    }
+  }
 }
 
 #sponsors {
-  background: linear-gradient(#e74c3c,#34495e);
+  background: #8bc97c;
 }
 
 #team {

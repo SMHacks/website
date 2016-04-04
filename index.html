@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title> SM Hacks </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      function set(x) {
+        document.getElementsByClassName("active")[0].className = "cards";
+        document.getElementById("set-" + x).className = "cards active";
+      }
+    </script>
   </head>
   <body>
     <div class="outbox" id="head">
@@ -33,7 +40,116 @@
         FAQ
       </div>
       <div class="inbox">
-        FAQ Content
+        <div class="tabs">
+          <div class="tab" onclick="set(1)"> General </div>
+          <div class="tab" onclick="set(2)"> Application </div>
+          <div class="tab" onclick="set(3)"> Logistics </div>
+          <div class="tab" onclick="set(4)"> Other </div>
+        </div>
+        <div class="cards active" id="set-1">
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+        </div>
+        <div class="cards" id="set-2">
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat2</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+        </div>
+        <div class="cards" id="set-3">
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat2</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+        </div>
+        <div class="cards" id="set-4">
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat2</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+          <div class="card">
+            <div class="q">Lorem Ipsum Domat</div>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio est, congue sed augue nec, consectetur gravida libero.</div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="outbox" id="sponsors">
