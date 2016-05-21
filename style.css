@@ -9,8 +9,16 @@
 	width:100%;
 	min-height:100%;
 	background-attachment:fixed;
-	background-position:center;
+	background-position:right bottom;
+	background-size:cover;
+	background-repeat:no-repeat;
+	color:#ffffff;
+	background-image:url(computer.png);
+	text-shadow:0 0 10px #ff7242;
+	background-size:cover;
+	background-repeat:no-repeat;
 	background-color:#dddddd;
+	background-image:url(computer.png);
 }
 .cover .container{
 	display:table-cell;
@@ -19,8 +27,18 @@
 .btn{
 	background:none;
 }
-.btn-primary{
-	color:#4582ec;
+.btn-primary,.btn-primary:focus{
+	background:none;
+	color:#ff7242;
+	border-color:#ff7242;
+}
+.btn-primary:hover,.btn-primary:active{
+	background-color:#ff7242;
+	border-color:#ff7242;
+	color:#ffffff !important;
+}
+.content a{
+	color:#ff7242 !important;
 }
 .content{
 	display:table;
@@ -32,4 +50,7 @@
 	position:absolute;
 	width:100%;
 	bottom:0;
+}
+#partners img{
+	width:20%;
 }
