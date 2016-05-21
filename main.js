@@ -1,15 +1,7 @@
-//smooth scrolling
-$(function() {
-	$('a[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: target.offset().top
-				}, 500);
-				return false;
-			}
-		}
-	});
-});
+$(window).on('load scroll',function(){
+	$('.navbar-brand').css('color',$(this).scrollTop()>$(this).height()-30?'#ff7242':'#ffffff')
+<<<<<<< HEAD
+=======
+	$(this).width()<992&&$('.navbar').css('display',$(this).scrollTop()>$(this).height()-30?'none':'inline-block')
+>>>>>>> gh-pages
+})
