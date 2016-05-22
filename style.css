@@ -14,6 +14,7 @@
 	background-repeat:no-repeat;
 	background-color:#dddddd;
 	background-image:url(computer.png);
+	font-family: 'Raleway', sans-serif;
 }
 .cover .container{
 	display:table-cell;
@@ -40,6 +41,7 @@
 	position:absolute;
 	width:100%;
 	top:100%;
+	font-family: 'Roboto', sans-serif;
 }
 .footer{
 	position:absolute;
@@ -48,4 +50,7 @@
 }
 #partners img{
 	width:20%;
+}
+.lead {
+	font-family: 'Raleway', sans-serif;
 }
