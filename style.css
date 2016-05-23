@@ -1,3 +1,6 @@
+html,body{
+	background-color:#dddddd;
+}
 .navbar{
 	background:none;
 	border:none;
@@ -8,21 +11,49 @@
 	height:100%;
 	width:100%;
 	min-height:100%;
-	background-attachment:fixed;
-	background-position:right bottom;
 	color:#333333;
 	text-shadow:0 0 10px #ff7242;
-	background-size:33% auto;
-	background-repeat:no-repeat;
-	background-color:#dddddd;
-	background-image:url(logo_2.0_solo.svg);
+}
+#logo{
+	width:33%;
+	height:auto;
+	position:fixed;
+	right:0;
+	bottom:0;
+	-webkit-animation:neon .7s ease-in-out infinite alternate;
+	animation:neon 1s ease-in-out infinite alternate;
 }
 @media(max-width:992px){
-	.cover{
-		background-position:center 5%;
-		background-size:auto 35%;
+	#logo{
+		height:30%;
+		width:auto;
+		top:5%;
+		left:50%;
+		-webkit-transform:translate(-50%);
+		        transform:translate(-50%);
 	}
 }
+@-webkit-keyframes neon {
+	from {
+		        -webkit-filter:none;
+		                filter:none;
+	}
+	to {
+		-webkit-filter:drop-shadow(0 0 5px #fff) brightness(1.5);
+		        filter:drop-shadow(0 0 5px #fff) brightness(1.5);
+	}
+}
+@keyframes neon {
+	from {
+		        -webkit-filter:none;
+		                filter:none;
+	}
+	to {
+		-webkit-filter:drop-shadow(0 0 5px #fff) brightness(1.5);
+		        filter:drop-shadow(0 0 5px #fff) brightness(1.5);
+	}
+}
+
 .cover .container{
 	display:table-cell;
 	vertical-align:middle;
@@ -48,6 +79,7 @@
 	position:absolute;
 	width:100%;
 	top:100%;
+	background-color:#ffffff;
 }
 .footer{
 	position:absolute;
