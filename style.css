@@ -10,15 +10,18 @@
 	min-height:100%;
 	background-attachment:fixed;
 	background-position:right bottom;
-	background-size:cover;
-	background-repeat:no-repeat;
-	color:#ffffff;
-	background-image:url(computer.png);
+	color:#333333;
 	text-shadow:0 0 10px #ff7242;
-	background-size:cover;
+	background-size:33% auto;
 	background-repeat:no-repeat;
 	background-color:#dddddd;
-	background-image:url(computer.png);
+	background-image:url(logo_2.0_solo.svg);
+}
+@media(max-width:992px){
+	.cover{
+		background-position:center 5%;
+		background-size:auto 35%;
+	}
 }
 .cover .container{
 	display:table-cell;
