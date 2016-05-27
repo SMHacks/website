@@ -1,10 +1,23 @@
 html,body{
-	background-color:#333333;
+	background-color:#fefefe;
 }
 .navbar{
-	background:none;
+	background-color:#ff7242;
 	border:none;
-	color:#cccccc;
+	color:#ccc;
+	z-index:50;
+	width:100%;
+	border-radius:0;
+}
+.navbar-brand{
+	color:#fefefe !important;
+}
+.affix-top{
+	top:100%;
+	position:absolute;
+}
+.affix{
+	top:0;
 }
 .cover{
 	display:table;
@@ -12,54 +25,39 @@ html,body{
 	height:100%;
 	width:100%;
 	min-height:100%;
-	color:#cccccc;
-	text-shadow:0 0 10px #ff7242;
+	color:#333;
+}
+.loading{
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#333;
+	z-index:100;
+	display:none;
+}
+.circle{
+	border-radius:50%;
+	height:0;
+	width:0;
+	background-color:#ff7242;
+	position:fixed;
+	top:50%;
+	left:50%;
+	opacity:0;
+	-webkit-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
 }
 #logo{
-	width:33%;
-	height:auto;
+	height:50%;
+	width:auto;
 	position:fixed;
-	right:0;
-	bottom:0;
-	-webkit-animation:neon .7s ease-in-out infinite alternate;
-	animation:neon 1s ease-in-out infinite alternate;
-	opacity:.5;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	        transform:translate(-50%,-50%);
 }
-@media(max-width:992px){
-	#logo{
-		height:30%;
-		width:auto;
-		top:5%;
-		left:50%;
-		-webkit-transform:translate(-50%);
-		        transform:translate(-50%);
-	}
-}
-@-webkit-keyframes neon {
-	from {
-		opacity:.5;
-		-webkit-filter:none;
-						filter:none;
-	}
-	to {
-		opacity:.9;
-		-webkit-filter:drop-shadow(0 0 5px #ff7242) brightness(1.5);
-						filter:drop-shadow(0 0 5px #ff7242) brightness(1.5);
-	}
-}
-@keyframes neon {
-	from {
-		opacity:.5;
-		-webkit-filter:none;
-						filter:none;
-	}
-	to {
-		opacity:.9;
-		-webkit-filter:drop-shadow(0 0 5px #ff7242) brightness(1.5);
-						filter:drop-shadow(0 0 5px #ff7242) brightness(1.5);
-	}
-}
-
 .cover .container{
 	display:table-cell;
 	vertical-align:middle;
@@ -72,7 +70,7 @@ html,body{
 	color:#ff7242;
 	border-color:#ff7242;
 	-webkit-filter:drop-shadow(0 0 5px #ff7242);
-	        filter:drop-shadow(0 0 5px #ff7242);
+					filter:drop-shadow(0 0 5px #ff7242);
 }
 .btn-primary:hover,.btn-primary:active{
 	background-color:#ff7242;
@@ -87,8 +85,7 @@ html,body{
 	position:absolute;
 	width:100%;
 	top:100%;
-	background-color:#444444;
-	color:#bbbbbb
+	color:#444444;
 }
 .footer{
 	position:absolute;

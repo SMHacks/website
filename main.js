@@ -1,8 +1,13 @@
-$('html,body').css('display','none')
-$('img').ready(function(){
-	$('html,body').delay(500).fadeIn(1000)
-})
-$(window).on('load scroll',function(){
-	$('.navbar-brand').css('color',$(this).scrollTop()>$(this).height()-30?'#ff7242':'#cccccc')
-	$(this).width()<1360&&$('.navbar').css('display',$(this).scrollTop()>$(this).height()-30?'none':'inline-block')
+$('.loading').css('display','inline-block')
+$('html,body').scrollTop(0)
+$('nav').data('offset-top',$(window).height())
+$(window).load(function(){
+	$('.circle').delay(500).animate({
+		height:'2000px',
+		width:'2000px',
+		opacity:1,
+		backgroundColor:'#fefefe'
+	},1000).promise().done(function(){
+		$('.loading').fadeOut(1000)
+	})
 })

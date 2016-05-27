@@ -8,15 +8,13 @@ html
 		link(rel='stylesheet prefetch' href='https://bootswatch.com/readable/bootstrap.min.css')
 		link(rel='stylesheet prefetch' href='style.css')
 		link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		script(src='https://code.jquery.com/ui/1.11.4/jquery-ui.min.js')
 		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
-		script(src='main.js')
 	body
-		nav.navbar.navbar-default.navbar-fixed-top
-			.container-fluid
-				.navbar-header
-					b.navbar-brand SM Hacks
-		img#logo(src='logo_2.0_solo.svg')
+		.loading
+			img#logo(src='logo_2.0_solo.svg')
+			.circle
 		.cover
 			.container.text-center
 				.row
@@ -25,8 +23,13 @@ html
 						h3 September 17-18, 2016
 						p.lead San Mateo High School's first hackathon.
 						//a.btn.btn-lg.btn-primary Sign up!
+
+		nav.navbar.navbar-default(data-spy='affix')
+			.navbar-header
+				b.navbar-brand SM Hacks
 		.content
 			.container
+				br
 				br
 				br
 				br
@@ -99,3 +102,4 @@ html
 				br
 				br
 				br
+				script(src='main.js')
