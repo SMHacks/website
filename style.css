@@ -21,13 +21,13 @@ html,body{
 }
 .bg{
 	position:fixed;
-	width:100%;
-	height:auto;
+	-o-object-fit:cover;
+	   object-fit:cover;
 	top:0;
-	left:0;
+	right:0;
 	opacity:.5;
-	-webkit-filter:grayscale(50%) brightness(50%);
-					filter:grayscale(50%) brightness(50%);
+	-webkit-filter:grayscale(50%) brightness(70%);
+					filter:grayscale(50%) brightness(70%);
 }
 .cover{
 	display:table;
