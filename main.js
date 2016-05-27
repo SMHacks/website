@@ -7,7 +7,7 @@ $(window).load(function(){
 		height:'2000px',
 		width:'2000px',
 		opacity:1,
-		backgroundColor:'#fefefe'
+		backgroundColor:'#ccc'
 	},1000).promise().done(function(){
 		$('.loading').fadeOut(1000).promise().done(function(){
 			$('.bg').fadeIn(1000)
