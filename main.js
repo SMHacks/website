@@ -1,6 +1,5 @@
 $('.loading').css('display','inline-block')
 $('.bg').css('display','none')
-$('html,body').scrollTop(0)
 $('nav').data('offset-top',$(window).height())
 $(window).load(function(){
 	$('.circle').delay(500).animate({
@@ -9,6 +8,7 @@ $(window).load(function(){
 		opacity:1,
 		backgroundColor:'#ccc'
 	},1000).promise().done(function(){
+		scrollTo(0,0)
 		$('.loading').fadeOut(1000).promise().done(function(){
 			$('.bg').fadeIn(1000)
 		})

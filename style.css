@@ -79,8 +79,6 @@ html,body{
 	background:none;
 	color:#ff7242;
 	border-color:#ff7242;
-	-webkit-filter:drop-shadow(0 0 5px #ff7242);
-					filter:drop-shadow(0 0 5px #ff7242);
 }
 .btn-primary:hover,.btn-primary:active{
 	background-color:#ff7242;
