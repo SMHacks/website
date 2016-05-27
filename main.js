@@ -1,4 +1,5 @@
 $('.loading').css('display','inline-block')
+$('.bg').css('display','none')
 $('html,body').scrollTop(0)
 $('nav').data('offset-top',$(window).height())
 $(window).load(function(){
@@ -8,6 +9,8 @@ $(window).load(function(){
 		opacity:1,
 		backgroundColor:'#fefefe'
 	},1000).promise().done(function(){
-		$('.loading').fadeOut(1000)
+		$('.loading').fadeOut(1000).promise().done(function(){
+			$('.bg').fadeIn(1000)
+		})
 	})
 })

@@ -19,6 +19,16 @@ html,body{
 .affix{
 	top:0;
 }
+.bg{
+	position:fixed;
+	width:100%;
+	height:auto;
+	top:0;
+	left:0;
+	opacity:.5;
+	-webkit-filter:grayscale(50%) brightness(50%);
+					filter:grayscale(50%) brightness(50%);
+}
 .cover{
 	display:table;
 	position:absolute;
@@ -86,6 +96,7 @@ html,body{
 	width:100%;
 	top:100%;
 	color:#444444;
+	background-color:#fefefe;
 }
 .footer{
 	position:absolute;
