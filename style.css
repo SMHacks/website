@@ -150,34 +150,34 @@ canvas{
 }
 #partners img, #sponsors img{
   padding:10px;
-  width:55%;
   text-align:center;
 }
 #opera{
-  width:60% !important;
+  width:100%;
 }
 #vilynx{
-  width:60% !important;
-  margin-top:9%;
+  width:100%;
+  margin-top:11%;
 }
 #justinmind{
-  width:50% !important;
+  width:70%;
 }
 #mlw{
-  width:40% !important;
+  width:50%;
 }
 #hackclub{
-  width:85% !important;
+  width:100%;
   margin-top:10%;
 }
 #mlh{
+  width:60%;
   margin-top:5%;
 }
 #hackerearth{
-  width:45% !important;
+  width:50%;
 }
 #stream{
-  width: 65% !important;
+  width:65%;
   margin-top:-2%;
 }
 hr{
