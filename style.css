@@ -62,7 +62,7 @@ canvas{
   width:100%;
   min-height:100%;
   color:#333;
-  pointer-events:none;
+  pointer-events:all;
 }
 .cover h1{
   line-height:.1em;
