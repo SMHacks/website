@@ -62,7 +62,7 @@ canvas{
   width:100%;
   min-height:100%;
   color:#333;
-  pointer-events:all;
+  pointer-events:none;
 }
 .cover h1{
   line-height:.1em;
@@ -73,10 +73,17 @@ canvas{
     line-height:.5em;
   }
 }
-.cover h3 a{
+.cover a{
   color:#444;
-  text-decoration:underline;
   pointer-events:all;
+}
+.cover h3 a{
+  text-decoration:underline;
+}
+.cover .btn,.cover .btn:focus{
+  border:3px solid #444;
+  color:#444 !important;
+  background:transparent;
 }
 .loading{
   height:100%;
