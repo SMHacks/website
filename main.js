@@ -136,6 +136,4 @@ $(window).load(function(){
       })
     })
   })
-}).scroll(function(){
-  $('.bg').css('top','-'+(pageYOffset*.1)+'px')
 })
