@@ -129,8 +129,8 @@ canvas{
   color:#ffffff !important;
 }
 .btn-default:hover{
-  background-color:#555;
-  border-color:#555;
+  background-color:#444;
+  border-color:#444;
   color:#ffffff !important;
 }
 .btn-primary,.btn-primary:focus,.btn-primary:active{
@@ -194,8 +194,12 @@ canvas{
   width:65%;
   margin-top:-2%;
 }
-.fa-3x:hover{
-  color:#464b4f;
+.btn-info,.btn-info:focus,.btn-info:active{
+  background:none;
+  color:#ff7242;
+}
+.btn-info:hover{
+  color:#ffffff !important;
 }
 hr{
   margin-bottom:120px;

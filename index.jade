@@ -26,11 +26,10 @@ html
             h1#home SM Hacks
             h3 September 17-18, 2016 @ <a target='_blank' href='https://goo.gl/maps/H94iydpfHEn'>Opera Mediaworks</a>
             p.lead San Mateo's first <b>high school</b> hackathon.
-            a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Register!
+            .btn-group
+              a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=-500 href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Register!
+              a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Sign up as a mentor!
             br
-            br
-            br
-            p.medium Interested in mentoring or leading a workshop? Sign-up #[a(href='https://smhacks.typeform.com/to/avpXre' target='_blank') here]!
             br
             br
             i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-translatey=500 data-rotatez=360 data-opacity=0)
@@ -159,17 +158,6 @@ html
                     .input-group-btn
                       button.btn.btn-primary#s Submit!
                   .alert.alert-dismissible#a(role='alert')
-              br
-              br
-              p.lead Follow us on social media!
-              .row
-                .col-sm-5
-                .col-sm-1
-                  a.btn.btn-default(href='https://www.facebook.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
-                    i.fa.fa-facebook-square.fa-3x
-                .col-sm-1
-                  a.btn.btn-default(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
-                    i.fa.fa-twitter-square.fa-3x
         br
         hr
         br
@@ -183,4 +171,10 @@ html
                 img(src='logo_2.0_solo.svg')
               .col-sm-7.hidden-xs
                 p.text-muted Made with <i class='fa fa-heart' style='color:#ff7242'></i> by SM Hacks.
-              .col-sm-4.hidden-xs
+              .col-sm-2.hidden-xs
+              .col-sm-2.col-xs-12.text-center
+                p
+                  a.btn.btn-info(href='https://www.facebook.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
+                    i.fa.fa-facebook-square.fa-3x
+                  a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
+                    i.fa.fa-twitter-square.fa-3x
