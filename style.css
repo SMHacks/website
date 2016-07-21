@@ -155,6 +155,13 @@ canvas{
 .content a{
   color:#ff7242 !important;
 }
+.medium{
+  font-size:1.3em;
+}
+.medium a{
+  text-decoration:underline;
+  font-weight:700;
+}
 #partners img, #sponsors img{
   padding:10px;
   text-align:center;
@@ -186,6 +193,9 @@ canvas{
 #stream{
   width:65%;
   margin-top:-2%;
+}
+.fa-3x:hover{
+  color:#464b4f;
 }
 hr{
   margin-bottom:120px;
