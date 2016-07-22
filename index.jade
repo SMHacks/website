@@ -26,12 +26,8 @@ html
             h1#home SM Hacks
             h3 San Mateo's first <b>high school</b> hackathon.
             p.lead September 17-18, 2016 @ <a target='_blank' href='https://goo.gl/maps/H94iydpfHEn'>Opera Mediaworks</a>
-            .btn-group
-              a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=-500 href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Register!
+            a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!
             br
-            br
-            br
-            p.medium Interested in mentoring or leading a workshop? Sign-up #[a(href='https://smhacks.typeform.com/to/avpXre' target='_blank') here]!
             br
             br
             i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-translatey=500 data-rotatez=360 data-opacity=0)
@@ -180,3 +176,17 @@ html
                     i.fa.fa-facebook-square.fa-3x
                   a.btn.btn-info(href='https://twitter.com/sanmateohacks' target='_blank' style='background-color:transparent; border:none; display:inline-block')
                     i.fa.fa-twitter-square.fa-3x
+    .modal.fade#m(tabindex="-1" role="dialog")
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(data-dismiss='modal') &times;
+            h1.modal-title Sign Up
+          .modal-body.text-center
+            h3
+              a.btn.btn-default(href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Hacker
+              |  or 
+              a.btn.btn-default(href='https://smhacks.typeform.com/to/avpXre' target='_blank') Mentor
+              |?
+          .modal-footer
+            button.btn.btn-primary(data-dismiss='modal') Cancel
