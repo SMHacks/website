@@ -162,19 +162,33 @@ canvas{
 #opera{
   width:100%;
 }
-#smule{
+#sony{
   width:100%;
-  margin-top:-13%;
+  margin-top:10%;
+}
+#smule{
+  width:75%;
+  margin-top:-15%;
 }
 #vilynx{
   width:100%;
-  margin-top:15%;
+  margin-top:5%;
 }
 #justinmind{
   width:70%;
 }
 #mlw{
   width:50%;
+}
+#balsamiq{
+  width:100%;
+  margin-top:2%;
+}
+#mit-launch{
+  width:100%;
+}
+#wolfram{
+  width:100%;
 }
 #hackclub{
   width:100%;
