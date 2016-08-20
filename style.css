@@ -242,9 +242,6 @@ hr{
   text-align: center;
 }
 
-
-//added
-
 .member {
   max-width: 200px;
   margin: 20px auto;
@@ -289,6 +286,7 @@ hr{
 }
 .img-circle{
   width: 120px;
+  height:120px;
   display:block;
   margin:0 auto;
 }

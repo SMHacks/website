@@ -197,10 +197,10 @@ html
             h2.text-center SM Hacks Team
             br
             br
-            .row.text-center
+            .row.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
               .col-sm-3
                 .member
-                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='samuel.jpg' id='samuel')
+                  img.img-responsive.img-circle(src='samuel.jpg')
                   .name Samuel Escapa
                   .role Sponsorship Director
                   .social
@@ -214,7 +214,7 @@ html
                         i.fa.fa-github
               .col-sm-3
                 .member
-                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='kevin.jpg' id='kevin')
+                  img.img-responsive.img-circle(src='kevin.jpg')
                   .name Kevin Fang
                   .role Operations Director
                   .social
@@ -228,7 +228,7 @@ html
                         i.fa.fa-twitter
               .col-sm-3
                 .member
-                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='awesomecindy.png' id='cindy')
+                  img.img-responsive.img-circle(src='awesomecindy.png')
                   .name Cindy Zhang
                   .role Tech Director
                   .social
@@ -242,7 +242,7 @@ html
                         i.fa.fa-medium
               .col-sm-3
                 .member
-                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='anna.jpg' id='anna')
+                  img.img-responsive.img-circle(src='anna.jpg')
                   .name Anna Zheng
                   .role Outreach Director
                   .social
@@ -254,6 +254,21 @@ html
                         i.fa.fa-facebook-official
                       a(href='#' target='_blank')
                         i.fa.fa-instagram
+            .row.text-center.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatey=1000)
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle(src='ben.png')
+                  .name Benjamin Pang
+                  .role Tech
+                  .social
+                    a(href='#' target='_blank')
+                      i.fa.fa-github
+                    a(href='#' target='_blank')
+                      i.fa.fa-stack-exchange
+                    a(href='#' target='_blank')
+                      i.fa.fa-reddit
+                    a(href='#' target='_blank')
+                      i.fa.fa-google-plus-official
           hr
           #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=-1000 data-opacity=0)
             h2.text-center Subscribe
