@@ -136,4 +136,10 @@ $(window).load(function(){
       })
     })
   })
+  $('.member').mouseenter(function(){
+    $(this).find('.social').fadeTo(100,1)
+  })
+  $('.member').mouseleave(function(){
+    $(this).find('.social').fadeTo(100,.01)
+  })
 })

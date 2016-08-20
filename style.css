@@ -241,48 +241,11 @@ hr{
 .lead{
   text-align: center;
 }
-
-.member {
-  max-width: 200px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid transparent;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-
-@media screen and (min-width: 992px) {
-  #team .col-md-4 {
-    width: 26%;
-  }
-
-  #team .col-md-0 {
-    width: 11%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .member .name {
-    font-size: 18px;
-  }
-
-  .member .role {
-    font-size: 12px;
-  }
-
-  #team .col-md-4 {
-    width: 31%;
-  }
-
-  #team .col-md-0 {
-    width: 0%;
-  }
-}
-.member:hover .social{
-  visibility: visible;
+.member{
+  max-width:200px;
+  margin:20px auto;
+  padding:10px;
+  border:1px solid transparent;
 }
 .img-circle{
   width: 120px;
@@ -292,15 +255,42 @@ hr{
 }
 .social{
   margin: 3px 0;
-  visibility: hidden;
+  opacity:.01;
 }
 .social a i{
   padding:5px;
   font-size:20px;
-  color:#464b4f;
+  color:#ff7242;
 }
 .name{
   padding-top:10px;
   font-family:'Raleway';
   font-weight:600;
+}
+@media screen and (min-width:992px){
+  #team .col-md-4{
+    width:26%;
+  }
+  #team .col-md-0{
+    width:11%;
+  }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+  .member .name{
+    font-size:18px;
+  }
+  .member .role{
+    font-size:12px;
+  }
+  #team .col-md-4{
+    width:31%;
+  }
+  #team .col-md-0{
+    width:0%;
+  }
+}
+@media screen and (max-width:767px){
+  .social{
+    opacity:1;
+  }
 }
