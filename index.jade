@@ -12,8 +12,9 @@ html
     link(rel='canonical' href='http://smhacks.com')
     title SM Hacks
     link(rel='stylesheet prefetch' href='bootstrap.css')
-    link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
     link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin')
+    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway')
     link(rel='stylesheet prefetch' href='style.css')
     script.
       head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')
@@ -152,7 +153,7 @@ html
                   img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='justinmind.png' id='justinmind')
               .col-sm-4
                 a(href='http://mitlaunch.com/' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='mit-launch.png' id='mit-launch')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=-500 data-opacity=0 src='mit-launch.png' id='mit-launch')
               .col-sm-4
                 a(href='http://mlworks.com' target='_blank')
                   img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='mlw.png' id='mlw')
@@ -164,7 +165,7 @@ html
                   img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='balsamiq.png' id='balsamiq')
               .col-sm-4
                 a(href='http://wolfram.com/' target='_blank')
-                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='wolfram.png' id='wolfram')
+                  img.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=500 data-opacity=0 src='wolfram.png' id='wolfram')
               .col-sm-4
                 a(href='http://vilynx.com/' target='_blank')
                   img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=-500 data-opacity=0 src='vilynx.png' id='vilynx')
@@ -184,6 +185,69 @@ html
               .col-md-3.col-sm-6
                 a(href='http://streameducation.org' target='_blank')
                   img.animateme(data-when='enter' data-from=1 data-to=0 data-translatey=500 data-opacity=0 src='stream.png' id='stream')
+          br
+          hr
+          #team.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-opacity=0 data-translatex=-1000)
+            h2.text-center SM Hacks Team
+            br
+            br
+            .row.text-center
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='samuel.jpg' id='samuel')
+                  .name Samuel Escapa
+                  .role Sponsorship Director
+                  .social
+                      a(href='#' target='_blank')
+                        i.fa.fa-globe
+                      a(href='#' target='_blank')
+                        i.fa.fa-linkedin
+                      a(href='#' target='_blank')
+                        i.fa.fa-facebook-official
+                      a(href='#' target='_blank')
+                        i.fa.fa-github
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='kevin.jpg' id='kevin')
+                  .name Kevin Fang
+                  .role Operations Director
+                  .social
+                      a(href='#' target='_blank')
+                        i.fa.fa-envelope
+                      a(href='#' target='_blank')
+                        i.fa.fa-linkedin
+                      a(href='#' target='_blank')
+                        i.fa.fa-facebook-official
+                      a(href='#' target='_blank')
+                        i.fa.fa-twitter
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='cindy.jpg' id='cindy')
+                  .name Cindy Zhang
+                  .role Tech Director
+                  .social
+                      a(href='#' target='_blank')
+                        i.fa.fa-google-plus-official
+                      a(href='#' target='_blank')
+                        i.fa.fa-linkedin
+                      a(href='#' target='_blank')
+                        i.fa.fa-github
+                      a(href='#' target='_blank')
+                        i.fa.fa-medium
+              .col-sm-3
+                .member
+                  img.img-responsive.img-circle.animateme(data-when='enter' data-from=1 data-to=0 data-translatex=-500 data-opacity=0 src='anna.jpg' id='anna')
+                  .name Anna Zheng
+                  .role Outreach Director
+                  .social
+                      a(href='#' target='_blank')
+                        i.fa.fa-snapchat-ghost
+                      a(href='#' target='_blank')
+                        i.fa.fa-linkedin
+                      a(href='#' target='_blank')
+                        i.fa.fa-facebook-official
+                      a(href='#' target='_blank')
+                        i.fa.fa-instagram
           hr
           #update.scrollme.animateme(data-when='enter' data-from=.5 data-to=0 data-translatex=1000 data-opacity=0)
             h2.text-center Subscribe
