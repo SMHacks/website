@@ -3,6 +3,7 @@ $('nav').data('offset-top',$(window).height())
 $('html,body').css('overflow-y','hidden')
 $(window).width()<768&&($('.scrollme').removeClass('scrollme'),$('.animateme').removeClass('animateme'))
 $(window).load(function(){
+  scrollme.init()
   particlesJS("particles-js", {
     "particles": {
       "number": {
