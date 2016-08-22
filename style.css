@@ -246,6 +246,7 @@ hr{
   margin:20px auto;
   padding:10px;
   border:1px solid transparent;
+  max-height:180px;
 }
 .img-circle{
   width: 120px;
