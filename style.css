@@ -26,12 +26,6 @@ html,body{
 .icon-bar,.navbar-toggle:focus .icon-bar,.navbar-toggle:active .icon-bar{
   background-color:#fefefe !important;
 }
-.navbar-toggle:hover{
-  background-color:#fefefe !important;
-}
-.navbar-toggle:hover .icon-bar{
-  background-color:#ff7242 !important;
-}
 .affix-top{
   top:100%;
   position:absolute;
