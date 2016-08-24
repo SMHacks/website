@@ -27,6 +27,14 @@ $(window).load(function(){
       }
     }
   })
+  $(window).scroll(function(){
+    ch=$(window).scrollTop()>=$('#schedule').offset().top-500&&$(window).scrollTop()<$('#sponsors').offset().top-500?'#087e8b'
+      :$(window).scrollTop()>=$('#sponsors').offset().top-500&&$(window).scrollTop()<$('#partners').offset().top-500?'#59cd90'
+      :$(window).scrollTop()>=$('#partners').offset().top-500&&$(window).scrollTop()<$('#team').offset().top-500?'#fac05e'
+      :$(window).scrollTop()>=$('#team').offset().top-500&&$(window).scrollTop()<$('#update').offset().top-500&&$(window).scrollTop()!=$(document).height()-$(window).height()?'#ee6352'
+      :'#ff7242'
+    $('.change').stop().animate({backgroundColor:ch},50)
+  })
   $('#s').click(function(){
     $.post('https://smhacks-molarmanful.rhcloud.com/',{email:$('#u').val()},function(x){
       $('#a').text(x).slideDown(100).addClass(x.match(/email/i)?'alert-danger':'alert-success').removeClass(x.match(/email/i)?'alert-success':'alert-danger').promise().done(function(){

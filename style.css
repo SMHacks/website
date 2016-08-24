@@ -143,6 +143,16 @@ canvas{
   border-color:#ff7242;
   color:#ffffff !important;
 }
+#sponsors .btn-primary,#sponsors .btn-primary:focus,#sponsors .btn-primary:active{
+  background:none;
+  color:#59cd90 !important;
+  border-color:#59cd90;
+}
+#sponsors .btn-primary:hover{
+  background-color:#59cd90;
+  border-color:#59cd90;
+  color:#ffffff !important;
+}
 .content{
   position:absolute;
   display:table;
@@ -213,7 +223,7 @@ canvas{
   color:#ffffff !important;
 }
 hr{
-  margin-bottom:120px;
+  margin-bottom:400px;
 }
 .footer{
   position:absolute;
@@ -261,7 +271,7 @@ hr{
 .social a i{
   padding:5px;
   font-size:20px;
-  color:#ff7242;
+  color:#ee6352;
 }
 .name{
   padding-top:10px;
