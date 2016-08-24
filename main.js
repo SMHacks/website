@@ -28,10 +28,11 @@ $(window).load(function(){
     }
   })
   $(window).scroll(function(){
-    ch=$(window).scrollTop()>=$('#schedule').offset().top-500&&$(window).scrollTop()<$('#sponsors').offset().top-500?'#087e8b'
-      :$(window).scrollTop()>=$('#sponsors').offset().top-500&&$(window).scrollTop()<$('#partners').offset().top-500?'#59cd90'
-      :$(window).scrollTop()>=$('#partners').offset().top-500&&$(window).scrollTop()<$('#team').offset().top-500?'#fac05e'
-      :$(window).scrollTop()>=$('#team').offset().top-500&&$(window).scrollTop()<$('#update').offset().top-500&&$(window).scrollTop()!=$(document).height()-$(window).height()?'#ee6352'
+    ch=$(window).scrollTop()>=$('#faq').offset().top-200&&$(window).scrollTop()<$('#schedule').offset().top-500?'#EE6352'
+      :$(window).scrollTop()>=$('#schedule').offset().top-500&&$(window).scrollTop()<$('#sponsors').offset().top-500?'#59CD90'
+      :$(window).scrollTop()>=$('#sponsors').offset().top-500&&$(window).scrollTop()<$('#partners').offset().top-500?'#3FA7D6'
+      :$(window).scrollTop()>=$('#partners').offset().top-500&&$(window).scrollTop()<$('#team').offset().top-500?'#FAC05E'
+      :$(window).scrollTop()>=$('#team').offset().top-500&&$(window).scrollTop()<$('#update').offset().top-500&&$(window).scrollTop()!=$(document).height()-$(window).height()?'#F79D84'
       :'#ff7242'
     $('.change').stop().animate({backgroundColor:ch},50)
   })

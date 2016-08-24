@@ -145,12 +145,12 @@ canvas{
 }
 #sponsors .btn-primary,#sponsors .btn-primary:focus,#sponsors .btn-primary:active{
   background:none;
-  color:#59cd90 !important;
-  border-color:#59cd90;
+  color:#3FA7D6 !important;
+  border-color:#3FA7D6;
 }
 #sponsors .btn-primary:hover{
-  background-color:#59cd90;
-  border-color:#59cd90;
+  background-color:#3FA7D6;
+  border-color:#3FA7D6;
   color:#ffffff !important;
 }
 .content{
@@ -271,7 +271,7 @@ hr{
 .social a i{
   padding:5px;
   font-size:20px;
-  color:#ee6352;
+  color:#F79D84;
 }
 .name{
   padding-top:10px;
