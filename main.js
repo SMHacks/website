@@ -41,4 +41,16 @@ $(window).load(function(){
   $('.member').mouseleave(function(){
     $(this).find('.social').fadeTo(100,.01)
   })
+  $('.anthony').mouseenter(function(){
+    $(this).find('img').attr('src','anthony2.jpg')
+  })
+  $('.anthony').mouseleave(function(){
+    $(this).find('img').attr('src','anthony.png')
+  })
+  $('.kevinf').mouseenter(function(){
+    $(this).find('img').attr('src','kevinf2.jpg')
+  })
+  $('.kevinf').mouseleave(function(){
+    $(this).find('img').attr('src','kevinf.jpg')
+  })
 })
