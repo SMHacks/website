@@ -22,6 +22,7 @@ html,body{
 }
 .navbar-toggle,.navbar-toggle:focus,.navbar-toggle:active{
   border:none;
+  background:none !important;
 }
 .icon-bar,.navbar-toggle:focus .icon-bar,.navbar-toggle:active .icon-bar{
   background-color:#fefefe !important;
