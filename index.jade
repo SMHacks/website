@@ -24,8 +24,10 @@ html
     link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin')
     link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway')
     link(rel='stylesheet prefetch' href='style.css')
+    noscript
+      link(rel='stylesheet prefetch' href='noscript.css')
     script.
-      head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js','https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')
+      head.load('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js','https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js','https://rawgit.com/camwiegert/baffle/master/dist/baffle.min.js','https://rawgit.com/nckprsn/scrollme/master/jquery.scrollme.min.js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js','main.js')
   body
     .loading
       img#logo(src='logo_2.0_solo.svg')
@@ -36,13 +38,14 @@ html
         .row
           .col-sm-12
             h1#home SM Hacks
-            h3 San Mateo's first <b>high school</b> hackathon.
-            p.lead September 17-18, 2016 @ <a target='_blank' href='https://goo.gl/maps/H94iydpfHEn'>Opera Mediaworks</a>
-            a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!
-            br
-            br
-            br
-            i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-translatey=500 data-rotatez=360 data-opacity=0)
+            .slide.scrollme
+              h3 San Mateo's first <b>high school</b> hackathon.
+              p.lead September 17-18, 2016 @ <a target='_blank' href='https://goo.gl/maps/H94iydpfHEn'>Opera Mediaworks</a>
+              a.btn.btn-default.btn-lg.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-opacity=0 data-translatex=500 data-toggle='modal' data-target='#m') Sign up now!
+              br
+              br
+              br
+              i.fa.fa-angle-down.fa-5x.scrollme.animateme(data-when='exit' data-from=0 data-to=.5 data-translatey=500 data-rotatez=360 data-opacity=0)
     nav.navbar.navbar-default.change(data-spy='affix')
       .navbar-header
         b.navbar-brand SM Hacks

@@ -64,6 +64,9 @@ canvas{
   color:#333;
   pointer-events:none;
 }
+.slide{
+  display:none;
+}
 .cover h1{
   line-height:.1em;
 }
@@ -93,7 +96,7 @@ canvas{
   left:0;
   background-color:#333;
   z-index:100;
-  display:none;
+  display:inline-block;
 }
 .circle{
   border-radius:50%;
@@ -165,6 +168,9 @@ canvas{
 .content a{
   color:#ff7242 !important;
 }
+#faq a{
+  color:#EE6352 !important;
+}
 #partners img, #sponsors img{
   padding:10px;
   text-align:center;
@@ -224,6 +230,7 @@ canvas{
 }
 hr{
   margin-bottom:400px;
+  border-bottom-color:#444;
 }
 .footer{
   position:absolute;

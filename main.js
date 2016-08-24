@@ -1,17 +1,21 @@
-$('.loading').css('display','inline-block')
 $('nav').data('offset-top',$(window).height())
 $('html,body').css('overflow-y','hidden')
+b=baffle('#home')
 $(window).width()<768&&($('.scrollme').removeClass('scrollme'),$('.animateme').removeClass('animateme'))
 $(window).load(function(){
-  scrollme.init()
   $('.circle').delay(500).animate({
     height:'2000px',
     width:'2000px',
     opacity:1
   },1000).promise().done(function(){
     scrollTo(0,0)
+      b.start()
     $('.loading').fadeOut(1000).promise().done(function(){
-      $('html,body').css('overflow-y','auto')
+      b.reveal(1000)
+      $('.slide').delay(1500).slideToggle().promise().done(function(){
+        $('html,body').css('overflow-y','auto')
+      })
+      scrollme.init()
     })
   })
   $('a[href*="#"]:not([href="#"])').click(function(){
