@@ -1,7 +1,7 @@
 $('nav').data('offset-top',$(window).height())
 $('html,body').css('overflow-y','hidden')
 b=baffle('#home')
-$(window).width()<768&&($('.scrollme').removeClass('scrollme'),$('.animateme').removeClass('animateme'))
+matchMedia('(hover:hover)').matches||($('.scrollme').removeClass('scrollme'),$('.animateme').removeClass('animateme'))
 $(window).load(function(){
   $('.circle').delay(500).animate({
     height:'2000px',
