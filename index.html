@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<!--output: index.html--><!DOCTYPE html>
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="logo.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +17,7 @@
     <meta property="og:site_name" content="SM Hacks">
     <meta property="og:title" content="SM Hacks">
     <meta property="og:description" content="San Mateo's first high school hackathon.">
+    <meta property="og:image" content="logo.png">
     <meta property="og:url" content="http://smhacks.com">
     <title>SM Hacks</title>
     <link rel="stylesheet prefetch" href="bootstrap.css">
@@ -32,7 +35,7 @@
     <div class="cover">
       <div class="container text-center">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12"><img data-when="exit" data-from='0' data-to='0.5' data-opacity='0' src="logo.png" id="logo" class="animateme"><br>
             <h1 id="home">SM Hacks</h1>
             <div class="slide scrollme">
               <h3>San Mateo's first <b>high school</b> hackathon.</h3>
@@ -44,7 +47,7 @@
       </div>
     </div>
     <nav data-spy="affix" class="navbar navbar-default change">
-      <div class="navbar-header"><b class="navbar-brand">SM Hacks</b>
+      <div class="navbar-header"><b class="navbar-brand">SM Hacks</b><img src="logo.png">
         <button data-toggle="collapse" data-target="#collapse" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       </div>
       <div id="collapse" class="collapse navbar-collapse">
@@ -296,9 +299,11 @@
         <footer data-when="enter" data-from='1' data-to='0' data-translatex='1000' class="footer scrollme animateme">
           <div class="container">
             <div class="row">
+              <div class="col-sm-1 col-xs-6 text-center"><img src="logo.png"></div>
               <div class="col-sm-7 hidden-xs">
                 <p class="text-muted">Made with <i class='fa fa-heart' style='color:#ff7242'></i> by SM Hacks.</p>
               </div>
+              <div class="col-sm-2 hidden-xs"></div>
               <div class="col-sm-2 hidden-xs"></div>
               <div class="col-sm-2 col-xs-6 text-center">
                 <p><a href="https://facebook.com/sanmateohacks" target="_blank" style="background-color:transparent; border:none; display:inline-block" class="btn btn-info"><i class="fa fa-facebook-square fa-3x"></i></a><a href="https://twitter.com/sanmateohacks" target="_blank" style="background-color:transparent; border:none; display:inline-block" class="btn btn-info"><i class="fa fa-twitter-square fa-3x"></i></a></p>

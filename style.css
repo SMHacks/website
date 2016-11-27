@@ -20,6 +20,10 @@ html,body{
 .nav a:hover{
   border:none !important;
 }
+.navbar img{
+  width:15%;
+  padding-top:15px;
+}
 .navbar-toggle,.navbar-toggle:focus,.navbar-toggle:active{
   border:none;
   background:none !important;
@@ -273,6 +277,16 @@ hr{
   padding-top:10px;
   font-family:'Raleway';
   font-weight:600;
+}
+.footer img{
+  padding-top:18px;
+  width:100%;
+  height:auto;
+}
+#logo{
+  width:15%;
+  height:auto;
+  margin-bottom:30px;
 }
 @media screen and (min-width:992px){
   #team .col-md-4{
