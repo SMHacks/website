@@ -30,6 +30,9 @@ html,body{
 .nav a{
   color:#fefefe !important;
 }
+.rest,.navbar-default,.content{
+  display:none;
+}
 .nav a:hover{
   border:none !important;
 }
