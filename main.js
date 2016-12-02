@@ -1,5 +1,4 @@
 $(function(){
-  $('body').fadeIn()
   scrollTo(0,0)
   $('.rest').delay(1000).slideToggle(500,function(){
     $('.navbar-default').fadeIn(500)
