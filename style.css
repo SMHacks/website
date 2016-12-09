@@ -2,16 +2,9 @@
   font-family:'smhacks';
   src:url('smhacks.ttf') format('truetype')
 }
-.logo{
-  font-family:smhacks;
-}
-.logo:before{
-  content:'A';
-  margin-left:.25ch
-}
 html,body{
   background-color:#fefefe;
-  font-family:'Cabin';
+  font-family:'Quicksand';
   background-color:#ff7242;
   overflow:hidden;
   height:100%;
@@ -122,17 +115,21 @@ canvas{
   top:0%;
   left:100%;
 }
-#sponsors{
+#schedule{
   top:100%;
   left:100%;
 }
-#team{
+#sponsors{
   top:100%;
+  left:0%;
+}
+#team{
+  top:200%;
   left:0%;
 }
 #update{
   top:200%;
-  left:0%;
+  left:100%;
 }
 #faq a{
   color:#EE6352 !important;
@@ -247,7 +244,7 @@ canvas{
 }
 .name{
   padding-top:10px;
-  font-family:'Raleway';
+  font-family:'Cabin';
   font-weight:600;
 }
 .navbar img{

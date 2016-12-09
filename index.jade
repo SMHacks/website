@@ -3,10 +3,10 @@ doctype html
 html
   head
     script(src='https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js')
-    //link(rel='shortcut icon' href='logo.png' type='image/png')
+    link(rel='shortcut icon' href='logo.png' type='image/png')
     meta(name='mobile-web-app-capable' content='yes')
     meta(name='apple-mobile-web-app-capable' content='yes')
-    //link(rel='apple-touch-icon' href='logo.png')
+    link(rel='apple-touch-icon' href='logo.png')
     meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
@@ -18,13 +18,13 @@ html
     meta(property='og:site_name' content='SM Hacks')
     meta(property='og:title' content='SM Hacks')
     meta(property='og:description' content="San Mateo's first high school hackathon.")
-    //meta(property='og:image' content='logo.png')
+    meta(property='og:image' content='logo.png')
     meta(property='og:url' content="http://smhacks.com")
     title SM Hacks
     link(rel='stylesheet prefetch' href='bootstrap.css')
     link(rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin')
-    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway')
+    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Quicksand')
+    link(rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Cabin:400,700')
     link(rel='stylesheet prefetch' href='style.css')
     noscript
       link(rel='stylesheet prefetch' href='noscript.css')
@@ -35,19 +35,15 @@ html
       .container.text-center
         .row
           .col-sm-12
-            h1.logo(style='font-size:13em;line-height:0')
-            br
-            br
+            img.logo(src='logo.png')
             .rest
-              h1#home SM Hacks
-              h3 San Mateo's first <b>high school</b> hackathon.
+              h3 San Mateo's first <b>high school</b> hackathon!
               p.lead January 14-15, 2017
-              a.btn.btn-default.btn-lg(href='#update') Subscribe!
-            //a.btn.btn-default.btn-lg(data-toggle='modal' data-target='#m') Sign up now!
+              a.btn.btn-default.btn-lg(data-toggle='modal' data-target='#m') Sign up now!
             
     nav.navbar.navbar-default.navbar-fixed-bottom
       .navbar-header
-        a.navbar-brand.logo(href='#top' style='font-size:2em')
+        a.navbar-brand: img(src='logo.png' style='height:110%;width:auto')
         button.navbar-toggle.collapsed(data-toggle='collapse' data-target='#collapse' aria-expanded='false')
           span.icon-bar
           span.icon-bar
@@ -55,7 +51,7 @@ html
       #collapse.collapse.navbar-collapse
         ul.nav.navbar-nav.navbar-right
           li: a(href='#faq') FAQ
-          //li: a(href='#schedule') Schedule
+          li: a(href='#schedule') Schedule
           li: a(href='#sponsors') Sponsors / Partners
           li: a(href='#team') Team
           li: a(href='#update') Subscribe
@@ -102,34 +98,34 @@ html
           .col-sm-4
             h3 What if I have another question?
             p Email us at #[a(href='mailto:hi@smhacks.com') hi@smhacks.com] if you have additional questions. Please email questions about mentoring or leading workshops to #[a(href='mailto:volunteer@smhacks.com') volunteer@smhacks.com] and sponsorship questions to #[a(href='mailto:sponsors@smhacks.com') sponsors@smhacks.com]. We are always happy to help!
-    //#schedule
+    #schedule.content
       .container
         h2.text-center Schedule
         p.lead Hacking is from noon to noon.
         .row
           .col-sm-1.hidden-xs
           .col-sm-5.text-center
-            h3 Saturday, Sept. 13
+            h3 Saturday, Jan. 14
             ul.list-unstyled
-              li <b>10am</b> - Registration
-              li <b>11am</b> - Opening Ceremony
-              li <b>Noon</b> - Hacking Starts
-              li <b>Noon</b> - Team Mixer
-              li <b>Noon</b> - Lunch
-              li <b>2pm</b> - Intro to Git Workshop
-              li <b>4pm</b> - Intro to UX Design Workshop
-              li <b>6:30pm</b> - Dinner
+              li <b>9:00 AM</b> - Set Up (Staff) 
+              li <b>10:00 AM</b> - Mentor/Sponsors Check In
+              li <b>11:00 AM</b> - Hacker Check In
+              li <b>12:00 PM</b> - Opening Ceremony 
+              li <b>12:30 PM</b> - Hacking Starts
+              li <b>12:30 PM</b> - Team-mixer
+              li <b>12:30 PM</b> - Lunch 
+              li <b>6:30 PM</b> - Dinner
           .col-sm-5.text-center
-            h3 Sunday, Sept. 14
+            h3 Sunday, Jan. 15
             ul.list-unstyled
-              li <b>12am</b> - Midnight Snack
-              li <b>8am</b> - Breakfast
-              li <b>11am</b> - Lunch
-              li <b>11am</b> - Project Submissions Open
-              li <b>Noon</b> - Hacking Ends
-              li <b>Noon</b> - Project Submissions Close
-              li <b>Noon</b> - Judging and Demos
-              li <b>2pm </b>- Closing Ceremony
+              li <b>12:00 AM</b> - Midnight Snack
+              li <b>8:00 AM</b> - Breakfast 
+              li <b>11AM to 12 PM</b> - Submissions
+              li <b>12:00 PM</b> - Hacking Ends
+              li <b>11 AM to 11:45 AM</b> - Lunch 
+              li <b>12:30 PM to 1:15 PM</b> - Judging Expo
+              li <b>1:45 PM</b> - Closing Cermony
+              li <b>3 PM to 4 PM</b> - Clean Up
     #sponsors.content
       .container
         h2.text-center Sponsors
@@ -343,9 +339,9 @@ html
             h1.modal-title Sign Up
           .modal-body.text-center
             h3
-              a.btn.btn-default(href='https://smhacks.typeform.com/to/XokTDO' target='_blank') Hacker
+              a.btn.btn-default(href='https://smhacks.typeform.com/to/SZPVdt' target='_blank') Hacker
               |  or 
-              a.btn.btn-default(href='https://smhacks.typeform.com/to/avpXre' target='_blank') Mentor
+              a.btn.btn-default(disabled=true) Mentor (Coming soon!)
               |?
           .modal-footer
             button.btn.btn-primary(data-dismiss='modal') Cancel
