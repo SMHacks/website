@@ -1,4 +1,4 @@
-<!--output: index.html--><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
@@ -50,7 +50,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#judges">Judges</a></li>
+          <!-- li: a(href='#judges') Judges-->
           <li><a href="#prizes">Prizes</a></li>
           <li><a href="#sponsors">Sponsors / Partners</a></li>
           <li><a href="#team">Team</a></li>
@@ -168,6 +168,10 @@
                   <td>4:00 PM</td>
                   <td>Particle.io Workshop</td>
                 </tr>
+                <tr>
+                  <td>4:00 PM</td>
+                  <td>Realtime Data Visualization Workshop</td>
+                </tr>
                 <!-- tr
                 td 5:00 PM
                 td Scenera Hardware Workshop
@@ -196,10 +200,6 @@
                   <td>Breakfast</td>
                 </tr>
                 <tr>
-                  <td>9:00 AM</td>
-                  <td>Realtime Data Visualization Workshop</td>
-                </tr>
-                <tr>
                   <td>11:00 AM - 12:00 PM</td>
                   <td><a href="https://smhacks.devpost.com/">Project Submissions</a></td>
                 </tr>
@@ -225,46 +225,41 @@
         </div>
       </div>
     </div>
-    <div id="judges" class="content">
-      <div class="container">
-        <h2 class="text-center">Judges</h2>
-        <div class="row text-center">
-          <div class="col-sm-4">
-            <div class="judge"><img src="zach-latta.jpeg" class="img-responsive img-circle">
-              <div class="name">Zach Latta</div>
-              <div class="role">Executive Director, Hack Club</div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="judge"><img src="tom.png" class="img-responsive img-circle">
-              <div class="name">Tom Preston-Werner</div>
-              <div class="role">Co-Founder, Github</div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="judge"><img src="maegan.jpeg" class="img-responsive img-circle">
-              <div class="name">Maegan Clawges</div>
-              <div class="role">Software Engineer, YouTube</div>
-            </div>
-          </div>
-        </div><br><br><br>
-        <div class="row text-center">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <div class="judge"><img src="claire.jpeg" class="img-responsive img-circle">
-              <div class="name">Claire Wang</div>
-              <div class="role">Student, Cornell University</div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="judge"><img src="" class="img-responsive img-circle">
-              <div class="name">Michael Huang</div>
-              <div class="role">Software Engineer, Uber</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- #judges.content
+    .container
+      h2.text-center Judges
+      .row.text-center
+        .col-sm-4
+          .judge
+            img.img-responsive.img-circle(src='zach-latta.jpeg')
+            .name Zach Latta
+            .role Executive Director, Hack Club
+        .col-sm-4
+          .judge
+            img.img-responsive.img-circle(src='tom.png')
+            .name Tom Preston-Werner
+            .role Co-Founder, Github
+        .col-sm-4
+          .judge
+            img.img-responsive.img-circle(src='maegan.jpeg')
+            .name Maegan Clawges
+            .role Software Engineer, YouTube
+      br
+      br
+      br
+      .row.text-center
+        .col-sm-2
+        .col-sm-4
+          .judge
+            img.img-responsive.img-circle(src='claire.jpeg')
+            .name Claire Wang
+            .role Student, Cornell University
+        .col-sm-4
+          .judge
+            img.img-responsive.img-circle(src='')
+            .name Michael Huang
+            .role Software Engineer, Uber
+    -->
     <div id="prizes" class="content">
       <div class="container">
         <h2 class="text-center">Prizes</h2>
